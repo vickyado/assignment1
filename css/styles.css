@@ -35,10 +35,9 @@ nav {
     color: white;
     font-size: 15px;
     font-weight: 100;
-    font-style: normal; background-image: linear-gradient(
-    rgba(0, 0, 0, 0.75),
-    rgba(0, 0, 0, 0.65)), url("../images/back.jpg");
-    width: 100%;
+    font-style: normal; 
+    background-color: black;
+    width: 100%; 
     height: 100vh; background-size: cover; background-position: center; margin: 0px;
      }
      .logo {
@@ -50,4 +49,19 @@ nav {
     font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 1.625rem;
     font-weight: 400;
     letter-spacing: 0.1px;
+}
+.above-the-fold-container{ width: 100vw; background-size: cover; padding-bottom: 180px;
+background-image: linear-gradient(
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0.65)), url("/Users/vicky/Desktop/assignment1/images/back.jpg");}
+.container{
+border-top: #222 solid 8px; padding-bottom: 80px;
+}
+
+.billsflix-title { margin-top: 2em; font-size: 4rem; font-weight: 700;
+}
+.billsflix-subtitle { font-size: 1.2rem;
+}
+.flex-left {
+align-self: flex-start; text-align: left;
 }
