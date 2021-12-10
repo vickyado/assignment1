@@ -5,43 +5,88 @@
     <title>Billsflix - Watch Bills Clips Online</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <link rel="stylesheet" type="text/css" href="css/imported.css" />
+    <script>
+      function swapGIF(elm) {
+        elm.src = "images/group.jpg";
+      }
+      function swapPNG(elm) {
+        elm.src = "images/surprise.gif";
+      }
+    </script>
   </head>
   <body>
     <section class="above-the-fold-container">
-    <header>
-      <nav class="flex-enabled">
-        <a href="index.html">
-          <img
-            class="logo"
-            src="images/coryflixlogo.png"
-            alt="BillsFlix Logo"
-          />
-        </a>
-        <div class="flex-enabled flex-right">
-          <ul class="billsflix flex-enabled flex-right">
-            <li>
-              <select class="select-language">
-                <option>English</option>
-                <option>Español</option>
-              </select>
-            </li>
-            <li>
-              <button class="button-signin">Sign In</button>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <h1 class="billsflix">Unlimited clips, sound bites, and more.</h1>
+      <header>
+        <nav class="flex-enabled">
+          <a href="index.html">
+            <img
+              class="logo"
+              src="images/coryflixlogo.png"
+              alt="BillsFlix Logo"
+            />
+          </a>
+          <div class="flex-enabled flex-right">
+            <ul class="billsflix flex-enabled flex-right">
+              <li>
+                <select class="select-language">
+                  <option>English</option>
+                  <option>Español</option>
+                </select>
+              </li>
+              <li>
+                <button class="button-signin">Sign In</button>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <section class="flex-enabled flex-center flex-column">
+        <h1 class="billsflix billsflix-title">
+          Unlimited clips, sound bites, and more.
+        </h1>
+        <h3 class="billsflix">Watch anywhere, Cancel anytime</h3>
+        <h3 class="billsflix billsflix-subtitle">
+          Ready to watch? Enter your email to create your membership.
+        </h3>
+        <form class="flex-enabled flex-center" action="getstarted.html">
+          <input type="email" class="input-email" placeholder="Email address" />
+          <button type="submit" class="button-submit">Get Started &gt;</button>
+        </form>
+      </section>
+      <a href=""></a>
     </section>
     <section class="container flex-enabled flex-center">
-      <section class="flex-enabled flex-center flex-column" style="width: 550px; padding-right: 80px;"> <h1 class="billsflix billsflix-title flex-left">
-        Enjoy on your TV.
-        </h1>
+      <section
+        class="flex-enabled flex-center flex-column"
+        style="width: 550px; padding-right: 80px"
+      >
+        <h1 class="billsflix billsflix-title flex-left">Enjoy on your TV.</h1>
         <h3 class="billsflix flex-left">
-        Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more. </h3>
+          Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray
+          players, and more.
+        </h3>
+      </section>
+      <img src="images/cory.gif" alt="cory face" />
+      <section class="container flex-enabled flex-center">
+        <img
+          src="images/surprise.gif"
+          alt="buffalo bills"
+          onmouseover="swapGIF(this)"
+          onmouseout="swapPNG(this)"
+          width="315"
+        />
+        <section
+          class="flex-enabled flex-center flex-column"
+          style="width: 620px; padding-left: 80px"
+        >
+          <h1 class="billsflix billsflix-title flex-left">
+            Download your clips to watch offline.
+          </h1>
+          <h3 class="billsflix flex-left">
+            Save your favorites easily and always have something to watch.
+          </h3>
         </section>
-      <img src="images/cory.gif" alt="cory face">
+      </section>
     </section>
   </body>
 </html>
